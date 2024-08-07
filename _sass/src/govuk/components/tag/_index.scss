@@ -12,7 +12,7 @@
     // where to break off of.
     max-width: $govuk-tag-max-width;
 
-    // These negative margins make sure that the tag component doesnât increase
+    // These negative margins make sure that the tag component doesn’t increase
     // the size of its container. Otherwise, for example, a table row containing
     // a tag will be taller than one containing plain text.
     //
@@ -36,7 +36,7 @@
     // is made bold.
     //
     // Transparent outlines are no longer added, as they make the Tag look
-    // indistinguishable from a button â but the tag is not interactive in the
+    // indistinguishable from a button – but the tag is not interactive in the
     // same way.
     @media screen and (forced-colors: active) {
       font-weight: bold;

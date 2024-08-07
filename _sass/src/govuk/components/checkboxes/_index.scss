@@ -62,9 +62,9 @@
     background: transparent;
   }
 
-  // â Check mark
+  // ✔ Check mark
   //
-  // The check mark is a box with a border on the left and bottom side (âââ),
+  // The check mark is a box with a border on the left and bottom side (└──),
   // rotated 45 degrees
   .govuk-checkboxes__label::after {
     content: "";
@@ -194,12 +194,12 @@
     // Shift the touch target into the left margin so that the visible edge of
     // the control is aligned
     //
-    //   âWhat colours do you like?
-    //  ââââââ
-    //  ââ[] â Purple
-    //  âââ²âââ
-    //  â²âââ Check box pseudo element, aligned with margin
-    //  ââââ Touch target (invisible input), shifted into the margin
+    //   ┆What colours do you like?
+    //  ┌┆───┐
+    //  │┆[] │ Purple
+    //  └┆▲──┘
+    //  ▲┆└─ Check box pseudo element, aligned with margin
+    //  └─── Touch target (invisible input), shifted into the margin
     .govuk-checkboxes__input {
       margin-left: $input-offset * -1;
     }
@@ -222,7 +222,7 @@
       height: $govuk-small-checkboxes-size; // 1
     }
 
-    // â Check mark
+    // ✔ Check mark
     //
     // Reduce the size of the check mark and re-align within the checkbox
     .govuk-checkboxes__label::after {
@@ -238,7 +238,7 @@
 
     // Fix position of hint with small checkboxes
     //
-    // Do not use hints with small checkboxes â because they're within the input
+    // Do not use hints with small checkboxes – because they're within the input
     // wrapper they trigger the hover state, but clicking them doesn't actually
     // activate the control.
     //
@@ -295,7 +295,7 @@
     //
     // We can't use `@media (hover: hover)` because we wouldn't get the hover
     // state in browsers that don't support `@media (hover)` (like Internet
-    // Explorer) â so we have to 'undo' the hover state instead.
+    // Explorer) – so we have to 'undo' the hover state instead.
     @media (hover: none), (pointer: coarse) {
       .govuk-checkboxes__item:hover .govuk-checkboxes__input:not(:disabled) + .govuk-checkboxes__label::before {
         box-shadow: initial;

@@ -19,7 +19,7 @@ $mq-show-breakpoints: ();
 // the current breakpoint from being included multiple times.
 //
 // We can't use the `exports` mixin for this because import directives cannot be
-// used within control directives ð 
+// used within control directives 😠
 $sass-mq-already-included: false !default;
 
 @if $sass-mq-already-included {
@@ -42,7 +42,7 @@ $sass-mq-already-included: true;
 /// @param {String | Boolean} $from [false] - One of $govuk-breakpoints
 /// @param {String | Boolean} $until [false] - One of $govuk-breakpoints
 /// @param {String | Boolean} $and [false] - Additional media query parameters
-/// @param {String} $media-type [all] - Media type: screen, printâ¦
+/// @param {String} $media-type [all] - Media type: screen, print…
 ///
 /// @ignore Undocumented mq API, for advanced use only:
 /// @ignore @param {Map} $breakpoints [$govuk-breakpoints]

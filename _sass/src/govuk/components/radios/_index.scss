@@ -66,7 +66,7 @@
     background: transparent;
   }
 
-  //  â¢  Radio button
+  //  •  Radio button
   //
   // We create the 'button' entirely out of 'border' so that they remain
   // 'filled' even when colours are overridden in the browser.
@@ -213,12 +213,12 @@
     // Shift the touch target into the left margin so that the visible edge of
     // the control is aligned
     //
-    //   âWhich colour is your favourite?
-    //  ââââââ
-    //  ââ() â Purple
-    //  âââ²âââ
-    //  â²âââ Radio pseudo element, aligned with margin
-    //  ââââ Touch target (invisible input), shifted into the margin
+    //   ┆Which colour is your favourite?
+    //  ┌┆───┐
+    //  │┆() │ Purple
+    //  └┆▲──┘
+    //  ▲┆└─ Radio pseudo element, aligned with margin
+    //  └─── Touch target (invisible input), shifted into the margin
     .govuk-radios__input {
       margin-left: $input-offset * -1;
     }
@@ -241,7 +241,7 @@
       height: $govuk-small-radios-size; // 1
     }
 
-    //  â¢  Radio button
+    //  •  Radio button
     //
     // Reduce the size of the 'button' and center it within the ring
     .govuk-radios__label::after {
@@ -255,7 +255,7 @@
 
     // Fix position of hint with small radios
     //
-    // Do not use hints with small radios â because they're within the input
+    // Do not use hints with small radios – because they're within the input
     // wrapper they trigger the hover state, but clicking them doesn't actually
     // activate the control.
     //
@@ -312,7 +312,7 @@
     //
     // We can't use `@media (hover: hover)` because we wouldn't get the hover
     // state in browsers that don't support `@media (hover)` (like Internet
-    // Explorer) â so we have to 'undo' the hover state instead.
+    // Explorer) – so we have to 'undo' the hover state instead.
     @media (hover: none), (pointer: coarse) {
       .govuk-radios__item:hover .govuk-radios__input:not(:disabled) + .govuk-radios__label::before {
         box-shadow: initial;

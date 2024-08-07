@@ -23,7 +23,7 @@
 
 @include govuk-exports("govuk/objects/main-wrapper") {
   .govuk-main-wrapper {
-    // In IE11 the `main` element can be used, but is not recognized  â
+    // In IE11 the `main` element can be used, but is not recognized  –
     // meaning it's not defined in IE's default style sheet,
     // so it uses CSS initial value, which is inline.
     display: block;

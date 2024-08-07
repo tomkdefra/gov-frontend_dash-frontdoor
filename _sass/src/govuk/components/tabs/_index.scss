@@ -26,7 +26,7 @@
 
     &::before {
       @include govuk-text-colour;
-      content: "\2014 "; // "â "
+      content: "\2014 "; // "— "
       margin-left: govuk-spacing(-5);
       padding-right: govuk-spacing(1);
     }

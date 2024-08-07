@@ -12,10 +12,10 @@
   // Colour of chevron
   $chevron-border-colour: $govuk-secondary-text-colour;
 
-  // Calculated altitude (â³â) of the right-angled isosceles chevron with sides
+  // Calculated altitude (△↕) of the right-angled isosceles chevron with sides
   // of length 8 (7px + 1px border):
   //
-  // â(8Â² + 8Â²) * 0.5 â 5.655
+  // √(8² + 8²) * 0.5 ≅ 5.655
   $chevron-altitude-calculated: govuk-em(5.655px, $font-size);
 
   .govuk-breadcrumbs {

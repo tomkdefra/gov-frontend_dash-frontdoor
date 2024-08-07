@@ -50,7 +50,7 @@
     }
 
     // Reduce the bottom margin to the size of the vertical gap (accommodating
-    // the button shadow) â the 'lost' margin is moved to the button-group.
+    // the button shadow) – the 'lost' margin is moved to the button-group.
     .govuk-button {
       margin-bottom: $vertical-gap + $button-shadow-size;
     }

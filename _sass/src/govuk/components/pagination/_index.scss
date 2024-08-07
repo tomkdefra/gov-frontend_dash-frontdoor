@@ -213,8 +213,8 @@
 
     .govuk-pagination__icon {
       // This magic number is brought to you by the following equation:
-      // ((lineHeight â arrowHeight) Ã· 2) Ã· fontSize
-      // ((25 â 13) Ã· 2) Ã· 19 = 0.326em
+      // ((lineHeight − arrowHeight) ÷ 2) ÷ fontSize
+      // ((25 − 13) ÷ 2) ÷ 19 = 0.326em
       //
       // This could have been done programmatically but we don't have functions
       // for grabbing the line-height of specific typography sizes just yet.

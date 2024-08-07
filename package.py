@@ -17,16 +17,20 @@ def copyFiles(src, dest, filetypes, replace={}):
                 os.makedirs(dest, exist_ok=True)
                 targetFile = dest + os.sep + item
                 shutil.copy(src + os.sep + item, targetFile)
-                with open(targetFile, encoding="latin-1") as targetFileHandle:
+                
+                with open(targetFile, encoding="utf-8", errors="ignore") as targetFileHandle:
                     targetFileContents = targetFileHandle.read()
+                
                 for findValue in replace.keys():
                     targetFileContents = targetFileContents.replace(findValue, replace[findValue])
+                
                 with open(targetFile, "w", encoding="utf-8") as targetFileHandle:
                     targetFileHandle.write(targetFileContents)
+                
                 for findValue in replace.keys():
                     if findValue in targetFile:
                         os.rename(targetFile, targetFile.replace(findValue, replace[findValue]))
-        
+
 # Print a message for the user if they haven't specified any parameters.
 outputFolder = ""
 if len(sys.argv) < 2:

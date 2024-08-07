@@ -64,7 +64,7 @@
 
 /// Tabular number helper
 ///
-/// Switches numerical glyphs (0â9) to use alternative forms with a
+/// Switches numerical glyphs (0–9) to use alternative forms with a
 /// monospaced bounding box. This ensures that columns of numbers, such
 /// as those in tables, remain horizontally aligned with one another.
 /// This also has the useful side effect of making numbers more legible
@@ -89,7 +89,7 @@
 /// @access public
 
 @mixin govuk-text-break-word($important: false) {
-  // IE 11 and Edge 16â17 only support the non-standard `word-wrap` property
+  // IE 11 and Edge 16–17 only support the non-standard `word-wrap` property
   word-wrap: break-word if($important, !important, null);
 
   // All other browsers support `overflow-wrap`
